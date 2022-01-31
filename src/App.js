@@ -1,24 +1,30 @@
-import logo from './logo.svg';
+import { Container } from 'react-bootstrap';
 import './App.css';
+// import { Elyes, FirstComponent } from './Component/FirstComponent';
+import FirstComponent from './Component/FirstComponent';
+import Formulaire from './Component/Formulaire';
+import NavbarPro from './Component/NavbarPro';
+import gomycode from './2.jpg'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Container>
+       <NavbarPro/>
+       <Formulaire/>
+        <h1 className='Nzayn'>Elyes</h1>
+        <h2 style={{color : 'green', fontSize:'250px' }}>Hiba</h2>
+        <FirstComponent/>
+        {/* <Elyes/> */}
+        {/* <FirstComponent/> */}
+        </Container>
+        <img src='/1.jpg' alt='Not found'/>
+        <img src={gomycode} alt='Not Found'/>
+
+
+       
     </div>
+    
   );
 }
 
